@@ -1,0 +1,33 @@
+<h3> {{ leyenda }} </h3>
+
+<div class="input-group">
+  <div class="input-group-append" id="button-addon4">
+    <button
+      class="btn btn-outline-primary"
+      type="button"
+      (click)="cambiarValor(-5)"
+    >
+      -
+    </button>
+  </div>
+  <input
+    type="text"
+    [(ngModel)]="porcentaje"
+    (ngModelChange)="onChanges($event)"
+    class="form-control"
+    name="progreso"
+    #txtProgress
+    placeholder=""
+    aria-label="Recipient's username with two button addons"
+    aria-describedby="button-addon4"
+  />
+  <div class="input-group-append" id="button-addon4">
+    <button
+      class="btn btn-outline-danger"
+      type="button"
+      (click)="cambiarValor(5)"
+    >
+      +
+    </button>
+  </div>
+</div>

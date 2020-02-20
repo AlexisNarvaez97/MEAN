@@ -10,14 +10,16 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { ProgressComponent } from './progress/progress.component';
 import { SharedModule } from '../shared/shared.module';
 
-
+import { FormsModule } from '@angular/forms';
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 
 @NgModule({
   declarations: [
     PagesComponent,
     DashboardComponent,
     Graficas1Component,
-    ProgressComponent
+    ProgressComponent,
+    IncrementadorComponent
   ],
   exports: [
     DashboardComponent,
@@ -28,7 +30,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     SharedModule,
-    PAGES_ROUTES
+    PAGES_ROUTES,
+    FormsModule
   ]
 })
 export class PagesModule { }
