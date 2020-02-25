@@ -12,6 +12,7 @@ import { SharedModule } from '../shared/shared.module';
 
 import { FormsModule } from '@angular/forms';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
     DashboardComponent,
     Graficas1Component,
     ProgressComponent,
-    IncrementadorComponent
+    IncrementadorComponent,
+    AccoutSettingsComponent
   ],
   exports: [
     DashboardComponent,
